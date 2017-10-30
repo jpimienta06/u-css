@@ -1,0 +1,73 @@
+/* Practice Layout */
+
+body, html{
+	font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+	float: left;
+  margin: 0 15px 5px 0;
+  border: solid 1px #bbb;
+}
+
+#top-nav{
+	background: #efefef;
+}
+
+#top-nav ul{
+	margin:0;
+}
+
+.fp-header{
+	background-color: #c9bc1f;
+	overflow: hidden;
+}
+
+.fp-header h1{
+	padding-left: 0.8em;
+	font-size: 1.5em;
+	margin:0;
+}
+
+.fp-section{
+	box-sizing: border-box;
+	padding: 0.8em;
+	width: 40%;
+	float: left;
+	background: #fff59d;
+}
+
+.fp-aside{
+	box-sizing: border-box;
+	padding: 0.8em;
+	float: right;
+	background: #ffffcf;
+	height: 692px;
+	width: 60%;
+}
+
+.fp-gallery{
+	background: #ffee58;
+	overflow: auto;
+	clear: both;
+	width: 100%;
+}
+
+.fp-gallery h2, .fp-aside h2{
+	font-size: 1.5em;
+	margin:0px 10px;
+}
+
+.fp-gallery ul {
+	list-style: none;
+}
+.fp-gallery li{
+	float: left;
+}
+.fp-gallery img{
+	width: 200px;
+	height: 200px;
+}
