@@ -1,0 +1,102 @@
+/* Practice Layout */
+body,
+html {
+  color: #787878;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+	height: 100%;
+  padding: 0;
+}
+
+section{
+	background-color: #F5F5F5;
+	margin-bottom: 20px;
+	overflow: auto;
+  padding: 10px;
+}
+
+/*Clase del div contenedor*/
+.nm-contenedor{
+	margin: 0 auto;
+	width: 1100px;
+}
+
+.nm-contenedor h3{
+	border-bottom: 1px solid #D24F20;
+}
+
+.nm-contenedor h5{
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+/* Primer punto*/
+.nm-contenido-sidebar{
+	float: left;
+	width: 80%;
+}
+
+.nm-sidebar{
+	float: left;
+	width: 20%;
+}
+
+.nm-sidebar ul{
+	border-left: 1px solid #D24F20;
+	list-style: none;
+}
+
+/* Punto numero 2 */
+.nm-section-li{
+	clear: left;
+}
+
+.nm-section-li ul{
+	list-style: none;
+	text-align: center;
+}
+
+.nm-section-li li{
+	border-bottom: 1px solid #D24F20;
+	line-height: 2em;
+	width: 150px;
+}
+
+.nm-col-nombre {
+  margin-left:150px;
+}
+
+.nm-col-numero {
+  margin-left:300px;
+}
+
+.nm-titulos{
+	margin-top: -116px;
+}
+/* Punto numero 3 */
+.nm-footer{
+	clear: left;
+}
+
+.nm-wrapper{
+	margin-bottom: -30px;
+	min-height: 100%;
+}
+.nm-wrapper button{
+	margin-bottom: 50px;
+}
+.nm-footer{
+	background-color: #D24F2E;
+  color: #fff;
+	height: 30px;
+}
+
+.nm-footer ul{
+	list-style: none;
+}
+
+.nm-footer li{
+	display: inline;
+	padding: 10px;
+}
