@@ -1,0 +1,100 @@
+/* Practice Display */
+body,
+html {
+  color: white;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.ds-container{
+	background-color: #0097A7;
+	margin: 0px auto;
+	max-width: 1280px;
+}
+
+.ds-header{
+	padding: 10px;
+}
+
+.ds-header h1{
+	display: inline;
+	font-size: 2.0em;
+	margin: 0px;
+}
+
+.ds-header span{
+	font-size: 0.5em;
+}
+
+.ds-nav{
+	background-color: #00B8D4;
+	box-sizing: border-box;
+}
+
+.ds-nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 10px;
+}
+
+.ds-nav li{
+	display: inline;
+}
+
+.ds-nav a{
+	color: white;
+}
+
+.ds-sections{
+	display: inline-flex;
+	padding: 10px;
+}
+
+.ds-sections aside{
+	box-sizing: border-box;
+}
+
+.ds-sections section{
+	box-sizing: border-box;
+	padding-right: 10px
+}
+
+.ds-tables{
+	background-color: #00B8D4;
+	box-sizing: border-box;
+	display: table;
+	padding: 10px;
+	width: 100%;
+}
+
+.ds-table-rows{
+	display: table-row;
+	text-align: center;
+}
+
+.ds-table-cells, .ds-table-header{
+	border: 1px solid white;
+	display: table-cell;
+	padding: 10px 5px;
+}
+
+.ds-table-header{
+	font-weight: bold;
+}
+
+.ds-boxes{
+	padding: 10px;
+}
+
+.ds-box{
+	border: 2px solid white;
+	display: inline-block;
+	text-align: center;
+	box-sizing: border-box;
+  height: 40px;
+  margin: 10px;
+	padding: 5px;
+  width: 140px;
+}
