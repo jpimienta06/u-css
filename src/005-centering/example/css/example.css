@@ -1,0 +1,134 @@
+/* Practice Layout */
+body,
+html {
+  color: white;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.cn-box-color{
+	background-color: #005662;
+}
+
+.cn-container{
+	background-color: #00838f;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 15px;
+}
+
+.cn-nav{
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.cn-nav a{
+	color: white;
+}
+
+.cn-nav ul{
+	list-style: none;
+	padding: 10px;
+}
+
+.cn-nav li{
+	display: inline;
+	margin: 0px 10px;
+}
+
+.cn-text-center{
+	text-align: center;
+}
+
+.cn-center-boxes-inline-block{
+	text-align: center;
+}
+
+.cn-center-boxes-inline-block div{
+	display: inline-block;
+	margin: 10px;
+	max-width: 200px;
+	padding: 10px;
+}
+
+.cn-center-boxes-flexbox{
+	display: flex;
+  justify-content: center;
+}
+
+.cn-center-boxes-flexbox div{
+	margin: 10px;
+	padding: 10px;
+	width: 200px;
+}
+
+.cn-center-position-height{
+	border: 1px solid	white;
+  height: 200px;
+  margin: 10px;
+  position: relative;
+}
+
+.cn-center-position-height div{
+  height: 50%;
+  margin: 20px;
+	overflow: auto;
+	padding: 10px;
+  position: absolute;
+	width: 50%;
+}
+
+.cn-center-position-no-height{
+	border: 1px dashed white;
+  height: 200px;
+  margin: 10px;
+  position: relative;
+}
+
+.cn-center-position-no-height div {
+  top: 20%;
+  left: 20px;
+	overflow: auto;
+  padding: 10px;
+	position: absolute;
+	right: 20px;
+  transform: translateY(-20%);
+}
+
+.cn-text-center-line{
+	height: 200px;
+	line-height: 200px;
+	max-width: 200px;
+	padding: 10px;
+}
+
+.cn-text-center-line p{
+	padding: 10px;
+}
+
+.cn-text-center-multiple{
+	display: table;
+	height: 200px;
+	margin: 20px 0px 10px 10px;
+	max-width: 400px;
+}
+
+.cn-text-center-multiple p{
+	display: table-cell;
+	padding: 10px;
+	vertical-align: middle;
+}
+
+.cn-text-center-multiple-flex{
+	display: flex;
+	flex-direction: column;
+  height: 100%;
+	margin: 10px;
+}
+
+.cn-text-center-multiple-flex p{
+	padding: 10px;
+}
