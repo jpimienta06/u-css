@@ -10,15 +10,20 @@ html {
 
 section{
 	background-color: #006064;
-  clear: both;
-  padding: 15px;
-  margin-bottom: 30px;
   box-sizing: border-box;
+  clear: both;
+  margin-bottom: 30px;
+  padding: 15px;
 }
 
 section h2 {
 	font-size: 1.3em;
 	margin: 0;
+}
+
+.bs-container{
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .bs-default-box{
