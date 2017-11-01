@@ -12,6 +12,7 @@
   <link href="../../app.css" rel="stylesheet" type="text/css">
 
   <!-- Import App Css file -->
+  <link href="./css/reset.css" rel="stylesheet" type="text/css">
   <link href="./css/example.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -32,11 +33,10 @@
     <main class="mdl-layout__content">
       <div class="page-content">
         <!-- Practice Content Goes Here -->
-  <section class = "nm-contenedor">
-        <section >
-
+        <div class = "nm-container">
+          <section class = "nm-section-sidebar">
             <h3>Side Bar</h3>
-            <div class = "nm-contenido-sidebar">
+            <div class = "nm-sidebar-content">
               <h5>Lorem Ipsum dolor sit amet, consectetur adipiscing elit</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus enim arcu, eget lobortis magna
                 mattis sit amet. Fusce rutrum condimentum urna ut accumsan. Pellentesque volutpat semper eleifend. Donec
@@ -44,7 +44,7 @@
                 tellus in convallis. Duis interdum nibh ac nisi feugiat hendrerit. Vestibulum vitae elit non lectus
                 lobortis sollicitudin eu sit amet odio.</p>
               </div>
-              <div class = "nm-sidebar">
+              <aside class = "nm-aside-sidebar">
                 <ul>
                   <li class="mdl-list__item">
                     <a class="mdl-list__item-primary-content">
@@ -65,9 +65,8 @@
                     </a>
                   </li>
                 </ul>
-              </div>
+              </aside>
             </section>
-
             <section class = "nm-section-li">
               <h3>Lista li</h3>
               <ul>
@@ -75,18 +74,18 @@
                 <li>1</li>
                 <li>2</li>
                 <li>3</li>
-                <li class = "nm-col-nombre nm-titulos">Nombre</li>
-                <li class = "nm-col-nombre">Homero Simpson</li>
-                <li class = "nm-col-nombre">Ned Flanders</li>
-                <li class = "nm-col-nombre">Seymour Skinner</li>
-                <li class = "nm-col-numero nm-titulos">Numero de telefono</li>
-                <li class = "nm-col-numero">111111111</li>
-                <li class = "nm-col-numero">222222222</li>
-                <li class = "nm-col-numero">333333333</li>
+                <li class = "nm-col-name nm-titles">Nombre</li>
+                <li class = "nm-col-name">Homero Simpson</li>
+                <li class = "nm-col-name">Ned Flanders</li>
+                <li class = "nm-col-name">Seymour Skinner</li>
+                <li class = "nm-col-number nm-titles">Numero de telefono</li>
+                <li class = "nm-col-number">111111111</li>
+                <li class = "nm-col-number">222222222</li>
+                <li class = "nm-col-number">333333333</li>
               </ul>
             </section>
 
-            <section>
+            <section >
               <h3>Footer</h3>
               <div class="nm-wrapper">
                 <h5>Lorem Ipsum dolor sit amet, consectetur adipiscing elit</h5>
@@ -109,17 +108,16 @@
                 <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Click :)</button>
               </div>
               <footer class="nm-footer">
-                  <ul>
-                    <li>home</li>
-                    <li>about</li>
-                    <li>contact us</li>
-                  </ul>
+                <ul>
+                  <li>home</li>
+                  <li>about</li>
+                  <li>contact us</li>
+                </ul>
               </footer>
             </section>
-          </section>
+          </div>
         </div>
       </main>
     </div>
-
   </body>
   </html>

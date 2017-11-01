@@ -17,41 +17,41 @@ section{
 }
 
 /*Clase del div contenedor*/
-.nm-contenedor{
+.nm-container{
 	margin: 0 auto;
 	width: 1100px;
 }
 
-.nm-contenedor h3{
+.nm-container h3{
 	border-bottom: 1px solid #D24F20;
+  margin: 10px 0px;
+  font-size: 1.5em;
 }
 
-.nm-contenedor h5{
-	margin-top: 0;
+.nm-container h5{
+  font-size: 1em;
+  font-weight: bold;
 	margin-bottom: 10px;
 }
 
 /* Primer punto*/
-.nm-contenido-sidebar{
+
+.nm-sidebar-content{
 	float: left;
 	width: 80%;
 }
 
-.nm-sidebar{
-	float: left;
+.nm-aside-sidebar{
+	float: right;
 	width: 20%;
 }
 
-.nm-sidebar ul{
+.nm-aside-sidebar ul{
 	border-left: 1px solid #D24F20;
 	list-style: none;
 }
 
 /* Punto numero 2 */
-.nm-section-li{
-	clear: left;
-}
-
 .nm-section-li ul{
 	list-style: none;
 	text-align: center;
@@ -63,16 +63,16 @@ section{
 	width: 150px;
 }
 
-.nm-col-nombre {
+.nm-col-name {
   margin-left:150px;
 }
 
-.nm-col-numero {
+.nm-col-number {
   margin-left:300px;
 }
 
-.nm-titulos{
-	margin-top: -116px;
+.nm-titles{
+	margin-top: -132px;
 }
 /* Punto numero 3 */
 .nm-footer{
