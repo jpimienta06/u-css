@@ -1,40 +1,146 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>006 - Basic Layout</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+<head>
+  <meta charset="utf-8">
+  <title>006 - Basic Layout</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
 
-    <!-- Ignore this, it's for the header --> 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <link href="../../app.css" rel="stylesheet" type="text/css">
+  <!-- Ignore this, it's for the header -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <link href="../../app.css" rel="stylesheet" type="text/css">
 
-    <!-- Import App Css file -->
-    <link href="./example.css" rel="stylesheet" type="text/css">
-    
-  </head>
-  <body>
-  	<!-- Always shows a header, even in smaller screens. -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header">
-        <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
-          <i class="material-icons">home</i>
-        </a>
-        <div class="mdl-layout__header-row">
-          <!-- Title -->
-          <span class="mdl-layout-title">006 - Basic Layout</span>
-          <!-- Add spacer, to align navigation to the right -->
-          <div class="mdl-layout-spacer"></div>
+  <!-- Import App Css file -->
+  <link href="./css/reset.css" rel="stylesheet" type="text/css">
+  <link href="./css/example.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+  <!-- Always shows a header, even in smaller screens. -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
+        <i class="material-icons">home</i>
+      </a>
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">006 - Basic Layout</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <!-- Practice Content Goes Here -->
+        <div class = "bl-container">
+          <!--Inicio seccion correspondiente al primer punto de la actividad-->
+          <h2>1. Using qual Heigh Columns</h2>
+          <div class = "bl-using-equal-height">
+            <div class = "bl-header">
+              <ul class="list">
+                <li><span> Inicio </span></li>
+                <li><span> Acerca de </span></li>
+                <li><span> Contactenos </span></li>
+              </ul>
+            </div>
+            <div class = "bl-sidebar">
+              <ul class="demo-list-item mdl-list">
+                <li class="mdl-list__item">
+                  <span class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon white-color">home</i>
+                    Inicio
+                  </span>
+                </li>
+                <li class="mdl-list__item">
+                  <span class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon white-color">description</i>
+                    Acerca de
+                  </span>
+                </li>
+                <li class="mdl-list__item">
+                  <span class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon white-color">email</i>
+                    Contactenos
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class =  "bl-main">
+              <p>Texto texto...</p>
+              <p>Texto texto...</p>
+              <p>Texto texto...</p>
+              <p>Texto texto...</p>
+              <p>Texto texto...</p>
+              <p>Texto texto...</p>
+              <p>Texto texto...</p>
+            </div>
+            <div class = "bl-footer">
+              <ul>
+                <li><span> Inicio </span></li>
+                <li><span> Acerca de </span></li>
+                <li><span> Contactenos </span></li>
+              </ul>
+            </div>
+          </div>
+          <!--Fin seccion correspondiente al primer punto de la actividad-->
+
+          <!--Inicio seccion correspondiente al segundo punto de la actividad-->
+          <h2>2. Using display flex</h2>
+          <div class = "bl-using-flex">
+            <div class = "bl-header">
+              <ul class="list">
+                <li><span> Inicio </span></li>
+                <li><span> Acerca de </span></li>
+                <li><span> Contactenos </span></li>
+              </ul>
+            </div>
+            <div class = "bl-wrapper">
+              <div class = "bl-sidebar">
+                <ul class="demo-list-item mdl-list">
+                  <li class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                      <i class="material-icons mdl-list__item-icon white-color">home</i>
+                      Inicio
+                    </span>
+                  </li>
+                  <li class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                      <i class="material-icons mdl-list__item-icon white-color">description</i>
+                      Acerca de
+                    </span>
+                  </li>
+                  <li class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                      <i class="material-icons mdl-list__item-icon white-color">email</i>
+                      Contactenos
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div class =  "bl-main">
+                <p>Texto texto...</p>
+                <p>Texto texto...</p>
+                <p>Texto texto...</p>
+                <p>Texto texto...</p>
+                <p>Texto texto...</p>
+                <p>Texto texto...</p>
+                <p>Texto texto...</p>
+              </div>
+            </div>
+            <div class = "bl-footer">
+              <ul>
+                <li><span> Inicio </span></li>
+                <li><span> Acerca de </span></li>
+                <li><span> Contactenos </span></li>
+              </ul>
+            </div>
+          </div>
+          <!--Fin seccion correspondiente al segundo punto de la actividad-->
         </div>
-      </header>
-      <main class="mdl-layout__content">
-        <div class="page-content">
-         <!-- Practice Content Goes Here -->
-        </div>
-      </main>
-    </div>
+      </div>
+    </main>
+  </div>
 
-  </body>
+</body>
 </html>

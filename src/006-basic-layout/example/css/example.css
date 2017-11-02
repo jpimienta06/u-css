@@ -1,0 +1,101 @@
+/* Practice Layout */
+body,
+html {
+	color: white;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.bl-container{
+	margin: 0 auto;
+	max-width: 1000px;
+	padding: 10px;
+}
+
+.bl-container h2{
+	color: black;
+	font-size: 1.5em;
+	margin: 0px 0px 20px 0px;
+}
+
+.bl-header,
+.bl-footer{
+	padding: 15px;
+}
+
+.bl-header ul,
+.bl-footer ul {
+	list-style: none;
+}
+
+.bl-header li,
+.bl-footer li{
+	margin: 0px 5px;
+	display: inline;
+}
+
+.bl-sidebar span{
+	color: white;
+}
+
+.white-color{
+	color: white !important;
+}
+
+/* Primer Punto */
+.bl-using-equal-height{
+	background-color: #005661;
+	margin: 10px auto;
+}
+
+.bl-using-equal-height .bl-header,
+.bl-using-equal-height .bl-footer{
+	background-color: #00838e;
+	clear: left;
+	overflow: hidden;
+	zoom: 1;
+}
+
+.bl-using-equal-height .bl-sidebar{
+	float: left;
+	background-color: #4fb3be;
+	margin-right: -200px;
+	position: relative;
+	width: 200px;
+}
+
+.bl-using-equal-height .bl-main{
+	border-left: 200px solid #4fb3be;
+	padding: 10px;
+}
+
+/* Segundo Punto */
+
+.bl-using-flex{
+	display: flex;
+	flex-direction: column;
+}
+
+
+.bl-using-flex .bl-header,
+.bl-using-flex .bl-footer{
+	max-width: 1000px;
+	background-color: #00838e;
+}
+
+.bl-using-flex .bl-wrapper{
+	display: flex;
+}
+
+.bl-using-flex .bl-sidebar{
+	background-color: #4fb3be;
+	width: 200px;
+}
+
+.bl-using-flex .bl-main{
+	background-color: #005661;
+	flex: 1;
+	padding: 10px;
+}
