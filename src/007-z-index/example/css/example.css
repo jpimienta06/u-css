@@ -17,6 +17,10 @@ p::first-letter{
 	position: relative;
 }
 
+.zi-container p{
+	margin: 20px auto;
+}
+
 .zi-principal-section{
 	background-color: #76C4D1;
   box-sizing: border-box;
@@ -39,6 +43,10 @@ p::first-letter{
 
 .zi-content1 hr{
 	border-bottom: 1px dashed #E72840;
+}
+
+.zi-content1 h2, .zi-content2 h2{
+	font-size: 1.5em;
 }
 
 .zi-article-content .zi-content1 p{
