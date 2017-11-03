@@ -1,0 +1,111 @@
+/* Practice Layout */
+html, body {
+	background-color: #D5EADE;
+  color: white;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 1.5;
+  position: relative;
+}
+
+p::first-letter{
+	font-weight: 500;
+}
+
+.zi-container{
+	position: relative;
+}
+
+.zi-container p{
+	margin: 20px auto;
+}
+
+.zi-principal-section{
+	background-color: #76C4D1;
+  box-sizing: border-box;
+  margin: 5%;
+  padding: 5% 0;
+  min-height: 100%;
+  overflow: auto;
+}
+
+.zi-article-content{
+	box-sizing: border-box;
+  padding-left: 5%;
+  width: 60%;
+}
+
+.zi-article-content-title h1{
+	font-size: 2.5em;
+	font-weight: 500;
+}
+
+.zi-content1 hr{
+	border-bottom: 1px dashed #E72840;
+}
+
+.zi-content1 h2, .zi-content2 h2{
+	font-size: 1.5em;
+}
+
+.zi-article-content .zi-content1 p{
+	text-transform: uppercase;
+}
+
+.zi-article-content .zi-content2{
+	background-color: rgba(255, 255, 255, 0.8);
+	color: black;
+	margin-left: -20%;
+	padding: 5% 5% 5% 20%;
+}
+
+
+.zi-article-content .zi-content2 p{
+	font-size: 1em;
+	padding: 1.5% 0;
+}
+
+
+.zi-gray-section{
+	background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 30%;
+  min-height: 100%;
+  z-index: 1;
+}
+
+.zi-aside-content{
+	background-color: #DFE180;
+  box-sizing: border-box;
+	line-height: 1;
+  color: #8C8D57;
+  padding: 5%;
+  position: absolute;
+  margin-top: 5%;
+  right: 5%;
+  top: 0;
+  width: 30%;
+  z-index: 2;
+}
+
+.zi-aside-content h1 {
+	font-size: 3em;
+	padding: 1.5% 0;
+}
+
+.zi-aside-content ul {
+  counter-reset: section;
+}
+
+.zi-aside-content li {
+  padding: 2% 0;
+  font-weight: 100;
+}
+
+.zi-aside-content .bold{
+  font-weight: 400;
+}
