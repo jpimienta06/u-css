@@ -1,0 +1,174 @@
+/* Practice Layout */
+body,
+html {
+  color: #787878;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+	color: #787878;
+	text-decoration: none;
+}
+
+
+h2 {
+  border-bottom: 2px solid #ebebeb;
+  font-size: 1em;
+  line-height: 40px;
+  margin: 20px 0;
+  padding-bottom: 20px;
+}
+
+footer{
+	background-color: #787878;
+	clear: both;
+	color: white;
+	height: 90px;
+	line-height: 90px;
+	margin: 0px -20px -20px -20px;
+	padding: 15px;
+}
+
+footer .as-footer-text{
+	text-align: center;
+}
+
+.as-container{
+	margin: 0px auto;
+	max-width: 1200px;
+}
+
+.as-aside-facet{
+	box-sizing: border-box;
+	display: inline-block;
+	width:20%;
+	padding-right: 10px;
+	float: left;
+}
+
+.as-header-tiles{
+	line-height: 40px;
+  margin: 20px 0;
+	float: right;
+	width: 100%
+}
+
+.as-header-tiles div{
+	float: right;
+}
+
+.as-header-tiles button {
+  background-color: transparent;
+  border: 1px solid #ebebeb;
+  height: 40px;
+  margin-left: 5px;
+}
+
+.as-header-tiles button:first-child {
+  background-color: black;
+}
+
+.as-header-tiles button:first-child  i{
+  color: white;
+}
+
+.as-tiles{
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	float: right;
+	padding-left: 20px;
+	width: 80%;
+}
+
+.as-tile{
+	margin-right: 10px;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.as-tile:hover{
+	opacity: 0.4;
+}
+
+.as-tile-image img {
+  width: 100%;
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.as-tile-image:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.as-new-collection{
+	background-color: #fbc2d4;
+	box-sizing: border-box;
+  color: #fff;
+  font-size: 0.8em;
+  line-height: 20px;
+  position: absolute;
+	top: 10px;
+	left: 10px;
+	padding: 2px;
+	text-decoration: none;
+  width: 87px;
+}
+
+.as-tile-image{
+	box-sizing: border-box;
+	height: 310px;
+	overflow: hidden;
+	position: relative;
+	width: 15rem;
+}
+
+.as-tile-image img{
+	width: 100%;
+}
+
+.as-header{
+	border-bottom: 1px solid #787878;
+	color: black;
+	font-size: 2em;
+	height: 90px;
+	line-height: 90px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.as-currency li{
+	background-color: #ebebeb;
+	margin: 5px 0px;
+}
+
+.as-currency a{
+	padding-left: 3px;
+}
+
+.as-currency a:hover{
+	color: white;
+}
+
+.as-currency li:hover{
+	background-color: #fbc2d4;
+}
+
+ .as-avatar{
+	 display: inline-flex;
+	 height: 90px;
+ }
+
+
+ .as-avatar img{
+	 float: left;
+	 margin-right: 10px;
+	 width: 60px;
+ }
