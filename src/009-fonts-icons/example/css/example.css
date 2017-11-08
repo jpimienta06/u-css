@@ -1,5 +1,185 @@
 /* Practice Layout */
 
-.trash{
+@font-face {
+  font-family: 'raleway-bold';
+  src: url('fonts/raleway/raleway-bold-webfont.eot');
+  src: url('fonts/raleway/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/raleway/raleway-bold-webfont.woff2') format('woff2'),
+  url('fonts/raleway/raleway-bold-webfont.woff') format('woff'),
+  url('fonts/raleway/raleway-bold-webfont.ttf') format('truetype'),
+  url('fonts/raleway/raleway-bold-webfont.svg#ralewaybold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'raleway-normal';
+  src: url('fonts/raleway/raleway-regular-webfont.eot');
+  src: url('fonts/raleway/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/raleway/raleway-regular-webfont.woff2') format('woff2'),
+  url('fonts/raleway/raleway-regular-webfont.woff') format('woff'),
+  url('fonts/raleway/raleway-regular-webfont.ttf') format('truetype'),
+  url('fonts/raleway/raleway-regular-webfont.svg#ralewayregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'raleway-thin';
+  src: url('fonts/raleway/raleway-thin-webfont.eot');
+  src: url('fonts/raleway/raleway-thin-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/raleway/raleway-thin-webfont.woff2') format('woff2'),
+  url('fonts/raleway/raleway-thin-webfont.woff') format('woff'),
+  url('fonts/raleway/raleway-thin-webfont.ttf') format('truetype'),
+  url('fonts/raleway/raleway-thin-webfont.svg#ralewaythin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+
+html, body {
+	background-color: #D5EADE;
+  color: white;
+  font-family: "raleway-thin", sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 1.5;
+  position: relative;
+}
+
+p::first-letter{
+	font-weight: bold;
+}
+
+.zi-container{
+	position: relative;
+}
+
+.zi-container p{
+	margin: 20px auto;
+}
+
+.zi-principal-section{
+	background-color: #76C4D1;
+  box-sizing: border-box;
+  margin: 5%;
+  padding: 5% 0;
+  min-height: 100%;
+  overflow: auto;
+}
+
+.zi-article-content{
+	box-sizing: border-box;
+  padding-left: 5%;
+  width: 60%;
+}
+
+.zi-article-content-title h1{
+	font-size: 2.5em;
+	font-weight: 500;
+}
+
+.zi-content1 hr{
+	border-bottom: 1px solid #E72840;
+}
+
+.zi-content1 h2, .zi-content2 h2{
+	font-size: 1.5em;
+}
+
+.zi-article-content .zi-content2{
+	background-color: rgba(255, 255, 255, 0.8);
 	color: black;
+	margin-left: -20%;
+	padding: 5% 5% 5% 20%;
+}
+
+.zi-article-content .zi-content2 p{
+	font-size: 1em;
+	padding: 1.5% 0;
+}
+
+.zi-gray-section{
+	background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 30%;
+  min-height: 100%;
+
+}
+
+.zi-aside-content{
+	background-color: #DFE180;
+  box-sizing: border-box;
+	line-height: 1;
+  color: #8C8D57;
+  padding: 5%;
+  position: absolute;
+  margin-top: 5%;
+  right: 5%;
+  top: 0;
+  width: 30%;
+	
+}
+
+.zi-aside-content h1 {
+	font-size: 2.5em;
+	padding: 1.5% 0;
+}
+
+.zi-aside-content ul {
+  counter-reset: section;
+}
+
+.zi-aside-content li {
+  padding: 2% 0;
+  font-weight: 100;
+}
+
+.zi-aside-content li:nth-child(even)::after {
+	content: "- using 'pt' ";
+	font-family: 'raleway-bold';
+}
+
+.zi-aside-content li:nth-child(2n+3)::after {
+	content: "- using 'em' ";
+}
+
+.zi-aside-content li:nth-child(even) {
+	font-size: 12pt;
+}
+
+.zi-aside-content li:nth-child(2n+3) {
+	font-family: 'raleway-normal';
+  font-size: 1em;
+}
+
+.zi-aside-content .zi-bold{
+  font-weight: 400;
+}
+
+.fi-input-search{
+	width: 13em;
+	height: 1.6em;
+	position: relative;
+	background-color: white;
+	border-radius: 0.4em;
+	margin: 0 0 0.8em 0;
+	color: black;
+}
+
+.fi-input-search input{
+	margin: 0 0 0 25px;
+	padding: 0;
+	border: none;
+}
+
+.fi-input-search i{
+	position: absolute;
+}
+
+.fi-icons{
+	text-align: right;
+	width: 100%;
 }
