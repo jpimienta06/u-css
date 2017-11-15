@@ -69,7 +69,9 @@ html {
 	border: 1px solid	white;
   height: 200px;
   margin: 10px;
+  overflow: auto;
   position: relative;
+  resize: vertical;
 }
 
 .cn-center-position-height div{
@@ -78,6 +80,7 @@ html {
 	overflow: auto;
 	padding: 10px;
   position: absolute;
+  resize: vertical;
 	width: 50%;
 }
 
@@ -85,7 +88,9 @@ html {
 	border: 1px dashed white;
   height: 200px;
   margin: 10px;
+  overflow: auto;
   position: relative;
+  resize: vertical;
 }
 
 .cn-center-position-no-height div {
@@ -94,6 +99,7 @@ html {
 	overflow: auto;
   padding: 10px;
 	position: absolute;
+  resize: vertical;
 	right: 20px;
   transform: translateY(-20%);
 }
@@ -131,4 +137,51 @@ html {
 
 .cn-text-center-multiple-flex p{
 	padding: 10px;
+}
+
+.cn-center-colors{
+  border: 1px dashed white;
+  box-sizing: border-box;
+  height: 300px;
+  margin: 10px;
+  overflow: auto;
+  position: relative;
+}
+
+.cn-color-1{
+  background-color: #9C27B0;
+  box-sizing: border-box;
+  display: block;
+  height: 100%;
+  padding: 50px 0;
+  width: 100%;
+}
+
+.cn-color-2{
+  background-color: #3F51B5;
+  box-sizing: border-box;
+  display: block;
+  height: 200px;
+  margin: 0 auto;
+  padding: 25px 0;
+  width: 200px;
+}
+
+.cn-color-3{
+  background-color: #2196F3;
+  box-sizing: border-box;
+  display: block;
+  height: 150px;
+  margin: 0 auto;
+  padding: 25px 0;
+  width: 150px;
+}
+
+.cn-color-4{
+  background-color: #FF9800;
+  box-sizing: border-box;
+  display: block;
+  height: 100px;
+  margin: 0 auto;
+  width: 100px;
 }
