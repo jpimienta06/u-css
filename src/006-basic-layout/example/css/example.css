@@ -99,3 +99,30 @@ html {
 	flex: 1;
 	padding: 10px;
 }
+
+.bl-box-container{
+	display: flex;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+}
+
+.bl-box{
+	background-color: white;
+	border: 2px solid green;
+	display: block;
+}
+
+.bl-square-box{
+	height: 190px;
+	width: 190px;
+}
+
+.bl-rectangular-box:nth-child(odd){
+	height: 200px;
+	width: 93px;
+}
+
+.bl-rectangular-box:nth-child(even){
+	height: 110px;
+	width: 93px;
+}
