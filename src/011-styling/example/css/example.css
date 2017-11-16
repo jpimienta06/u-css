@@ -1,0 +1,124 @@
+/* Practice Layout */
+* {
+  margin: 0;
+}
+
+html, body, .page-content{
+  height: 100%;
+  padding: 0 !important;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #9b9b9b;
+}
+
+.sb-content-wrap{
+	margin-bottom: -250px;
+  min-height: 100%;
+}
+
+.sb-content-wrap::after{
+	content: "";
+	display: block;
+}
+
+.sb-background-image{
+	background-attachment: fixed;
+	background-image: url("../images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+
+.sb-background-image h1{
+	background-color: black;
+	color: white;
+	font-size: 2em;
+	line-height: 300px;
+	opacity: 0.5;
+	text-align: center;
+}
+
+.sb-form-wrap{
+	margin: 0 auto;
+	padding: 15px;
+	width: 600px;
+}
+
+.sb-form-wrap input, .sb-form-wrap textarea{
+	background-color: #eeeeee;
+	border: none;
+	box-sizing: border-box;
+	color: #444444;
+	display: block;
+	font-size: 1em;
+	line-height: 1.5em;
+	margin: 0 0 15px 0;
+	padding: 10px;
+	width: 100%;
+}
+
+.sb-form-wrap input:focus, .sb-form-wrap textarea:focus{
+	-webkit-transition-duration: 0.4s;
+	border: 1px solid black;
+	transition-duration: 0.4s;
+}
+
+.sb-send-button {
+		-webkit-transition-duration: 0.4s;
+    background-color: #fbc2d4;
+    border: 2px solid #fbc2d4;
+		box-sizing: border-box;
+    display: block;
+    color: white;
+    font-size: 16px;
+    padding: 15px;
+		margin: 0 0 15px 0;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.4s;
+		width: 150px;
+}
+
+.sb-send-button:hover {
+    background-color: #ffffff;
+		color: #fbc2d4;
+}
+
+.sb-footer{
+	background-color: #fbc2d4;
+	padding: 25px 0px;
+}
+
+.sb-footer, .sb-content-wrap::after{
+	height: 250px;
+}
+
+.sb-box-container{
+	background-color: inherit;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.sb-box{
+	color: white;
+	font-size: 1em;
+	margin: 50px;
+}
+
+.sb-box h3{
+	border-bottom: 2px solid white;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+}
+
+.sb-box a{
+	color: white;
+	text-decoration: none;
+}
+
+.sb-box a:hover{
+	color: black;
+}
