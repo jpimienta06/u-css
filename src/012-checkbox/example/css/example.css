@@ -1,0 +1,101 @@
+/* Practice Layout */
+body,
+html {
+  color: #787878;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.cb-container{
+	box-shadow: 10px 10px 5px #888888;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	width: 600px;
+}
+
+.cb-labels:hover{
+	background-color: #D8D8D8;
+}
+
+.cb-container > input{
+	opacity: 0;
+	order: 1;
+	position: absolute;
+}
+
+.cb-container > input:checked + label{
+	background-color: white;
+	color: black;
+}
+
+.cb-container > label{
+	background-color: #E5E5E5;
+	color: #7F7F7F;
+	font-size: 1em;
+	order: 1;
+	padding: 15px 25px;
+}
+
+.cb-container > label:hover{
+	background-color: #D8D8D8;
+}
+
+.cb-information{
+	order: 2;
+	padding: 30px;
+}
+
+.cb-selected-elements{
+	background-color: white;
+  box-shadow: 0 1px 2px #888888;
+  height: 250px;
+  margin: 10px;
+  padding: 20px;
+	width: 200px;
+}
+
+.cb-selected-elements  label{
+	display: inline-block;
+	margin-bottom: 15px;
+  padding-left: 30px;
+	position: relative;
+}
+
+.cb-selected-elements  input{
+	opacity: 0;
+	position: absolute;
+  z-index: -1;
+}
+
+.cb-costume-checkbox{
+	background: #E6E6E6;
+	height: 20px;
+	left: 0;
+	position: absolute;
+  width: 20px;
+  top: 2px;
+}
+
+.cb-selected-elements label:hover > .cb-costume-checkbox{
+	background: #CCCCCC;
+}
+
+.cb-selected-elements input:checked ~ .cb-costume-checkbox{
+	background: #2aa1c0;
+	color: white;
+	content: "\2713 ";
+}
+
+.cb-selected-elements input:checked ~ .cb-costume-checkbox:after{
+	color: white;
+	content: "\2713 ";
+}
+
+.cb-selected-elements input:disabled ~ .cb-costume-checkbox{
+	background-color: #E6E6E6;
+	opacity: 0.6;
+	pointer-events: none;
+}
