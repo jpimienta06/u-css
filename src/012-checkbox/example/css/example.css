@@ -9,16 +9,24 @@ html {
 }
 
 .cb-container{
-	box-shadow: 10px 10px 5px #888888;
+	box-shadow: 0 48px 80px -32px #888888;
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0 auto;
-	width: 600px;
+	margin: 0 30px;
+	width: 700px;
 }
 
-.cb-labels:hover{
-	background-color: #D8D8D8;
+
+h2{
+  font-size: 1.3em;
+  font-weight: bold;
 }
+
+h3{
+  font-size: 1em;
+  font-weight: bold;
+}
+/* Tabs*/
 
 .cb-container > input{
 	opacity: 0;
@@ -43,9 +51,16 @@ html {
 	background-color: #D8D8D8;
 }
 
+/*Details*/
+
 .cb-information{
+  display: none;
 	order: 2;
 	padding: 30px;
+}
+
+input:checked + label + .cb-information{
+  display: block;
 }
 
 .cb-selected-elements{
@@ -64,13 +79,13 @@ html {
 	position: relative;
 }
 
-.cb-selected-elements  input{
+.cb-input{
 	opacity: 0;
 	position: absolute;
   z-index: -1;
 }
 
-.cb-costume-checkbox{
+.cb-default-chooser{
 	background: #E6E6E6;
 	height: 20px;
 	left: 0;
@@ -79,23 +94,78 @@ html {
   top: 2px;
 }
 
-.cb-selected-elements label:hover > .cb-costume-checkbox{
+label:hover > .cb-default-chooser{
 	background: #CCCCCC;
 }
 
-.cb-selected-elements input:checked ~ .cb-costume-checkbox{
+.cb-input:checked ~ .cb-default-chooser{
 	background: #2aa1c0;
 	color: white;
 	content: "\2713 ";
 }
 
-.cb-selected-elements input:checked ~ .cb-costume-checkbox:after{
+.cb-input:checked ~ .cb-default-chooser:after{
 	color: white;
 	content: "\2713 ";
 }
 
-.cb-selected-elements input:disabled ~ .cb-costume-checkbox{
+.cb-input:disabled ~ .cb-default-chooser{
 	background-color: #E6E6E6;
 	opacity: 0.6;
 	pointer-events: none;
+}
+
+.cb-radio{
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked ~ .cb-default-chooser{
+	background: #2aa1c0;
+	color: white;
+	content: "\2022";
+}
+
+input[type="radio"]:checked ~ .cb-default-chooser:after{
+	color: white;
+	content: "\2022";
+}
+
+input[type="radio"]:disabled ~ .cb-default-chooser{
+	background-color: #E6E6E6;
+	opacity: 0.6;
+	pointer-events: none;
+}
+
+/* Cards */
+
+.cb-cards ul{
+  list-style: none;
+  width: 500px;
+}
+
+.cb-cards li img{
+  float: left;
+  height: auto;
+  margin-right: 10px;
+  width: 100px;
+
+}
+
+.cb-cards li p{
+  font-size: 0.75em;
+}
+
+.cb-cards li{
+  overflow: hidden;
+}
+
+.cb-cards li:hover{
+  background-color: #EEEEEE;
+  cursor: pointer;
+}
+
+.cb-cards label{
+  float: right;
+  position: relative;
+  width: 20px;
 }
