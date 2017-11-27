@@ -1,0 +1,18 @@
+
+.rd-product{
+  display: flex;
+  float: left;
+}
+
+.rd-pruduct-images{
+  float: left;
+  display: inline-grid;
+}
+
+.rd-pruduct-big-image{
+  float: right;
+}
+
+.rd-product-detail{
+  float: right;
+}
