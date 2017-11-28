@@ -61,7 +61,6 @@ nav.rd-navbar-scroll-no-color{
   height: 2px;
   width: 0px;
   transition: width 0.4s;
-
 }
 
 .rd-navbar  #rd_menu a:hover::after {
@@ -114,7 +113,7 @@ nav.rd-navbar-scroll-no-color{
 
 /* Media Queries*/
 
-@media (min-width: 325px) {
+@media (min-width: 480px) {
   nav.rd-navbar-scroll-color{
     background-color: #448AFF;
   }
