@@ -1,0 +1,59 @@
+.rd-breadcrumbs-arrorws{
+  display: flex;
+  margin: 30px 0;
+  padding: 20px 0;
+}
+
+.rd-breadcrumbs ul li{
+  display: inline;
+}
+
+.rd-breadcrumbs ul li:not(:last-child)::after{
+  content: ' / ';
+}
+
+.rd-breadcrumbs ul li a{
+  color: #000000;
+  cursor: pointer;
+  font-weight: 700;
+  opacity: 0.87;
+  text-decoration: none;
+}
+
+.rd-breadcrumbs ul li:last-child a{
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.rd-breadcrumbs ul li:not(:last-child) a:hover{
+  color: #448AFF;
+}
+
+.rd-arrows{
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.rd-arrows a {
+  border-radius: 50%;
+  color: #E91E63;
+  height: 32px;
+  position: relative;
+  width: 32px;
+}
+
+
+.rd-arrows a:hover{
+  background-color: #9E9E9E;
+  opacity: 0.2;
+}
+
+.rd-arrows a i{
+  top: 50%;
+  left: 50%;
+  line-height: 24px;
+  position: absolute;
+  transform: translate(-12px,-12px);
+  width: 24px;
+}
