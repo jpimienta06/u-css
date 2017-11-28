@@ -13,9 +13,10 @@
 }
 
 .rd-breadcrumbs ul li a{
-  color: rgba(0,0,0,.87);
+  color: #000000;
   cursor: pointer;
   font-weight: 700;
+  opacity: 0.87;
   text-decoration: none;
 }
 
@@ -44,7 +45,8 @@
 
 
 .rd-arrows a:hover{
-  background-color: rgba(158,158,158,.2);
+  background-color: #9E9E9E;
+  opacity: 0.2;
 }
 
 .rd-arrows a i{
