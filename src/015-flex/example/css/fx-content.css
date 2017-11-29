@@ -18,8 +18,9 @@ a {
 }
 
 .fx-content-section{
-	display: flex;
-  padding: 0 20px;
+	display: inline-flex;
+  flex-grow: 2;
+  flex-wrap: wrap;
   margin: -5em auto 0 auto;
   max-width: 1200px;
 	justify-content: space-around;
@@ -29,8 +30,8 @@ a {
   background-color: #FFFFFF;
   border: 2px solid #DDD;
   border-radius: 4px;
-  margin: 1em;
-  width: 350px;
+  margin: 1em 0.2em;
+  width: 320px;
 }
 
 .fx-content-section .fx-tile:hover{
@@ -78,4 +79,22 @@ a {
 .fx-tile .fx-options > div{
   margin: 0.2em;
   padding: 0.5em;
+}
+
+.fx-tile .fx-options .fx-list a{
+  color: #aaa;
+}
+
+.fx-tile .fx-options .fx-list a:hover{
+  color: #888;
+}
+
+.fx-tile .fx-options .fx-list a:not(:last-child)::after{
+  content: ',';
+}
+
+.fx-tile .fx-options .fx-read-more:hover{
+  background-color: #eee;
+  border-radius: 2px;
+  -webkit-transition-duration: 1s;
 }
