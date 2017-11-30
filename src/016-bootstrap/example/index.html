@@ -1,40 +1,178 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>016 - Bootstrap and Material Column System</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+<head>
+  <meta charset="utf-8">
+  <title>016 - Bootstrap and Material Column System</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
 
-    <!-- Ignore this, it's for the header --> 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <link href="../../app.css" rel="stylesheet" type="text/css">
+  <!-- Ignore this, it's for the header -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <link href="../../app.css" rel="stylesheet" type="text/css">
 
-    <!-- Import App Css file -->
-    <link href="./example.css" rel="stylesheet" type="text/css">
-    
-  </head>
-  <body>
-  	<!-- Always shows a header, even in smaller screens. -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header">
-        <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
-          <i class="material-icons">home</i>
-        </a>
-        <div class="mdl-layout__header-row">
-          <!-- Title -->
-          <span class="mdl-layout-title">016 - Bootstrap and Material Column System</span>
-          <!-- Add spacer, to align navigation to the right -->
-          <div class="mdl-layout-spacer"></div>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+  integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+  crossorigin="anonymous">
+
+  <!-- Import App Css file -->
+  <link href="./css/reset.css" rel="stylesheet" type="text/css">
+  <link href="./css/example.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+  <!-- Always shows a header, even in smaller screens. -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
+        <i class="material-icons">home</i>
+      </a>
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">016 - Bootstrap and Material Column System</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <!-- Practice Content Goes Here -->
+        <section class="container">
+          <header class="jumbotron jumbroton-fluid">
+            <h1 class=display-3>Talos Travel</h1>
+            <h3 class="lead">Travel is the only thing you by that makes you richer</h3>
+          </header>
+          <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+            <button class="navbar-toggler navbar-toggler-right" type="button"
+            data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">Navbar</a>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card bs-margin-bottom">
+              <div class="card-block">
+                <h3 class="card-title">What are you looking?</h3>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <img src="https://placeimg.com/40/40/tech" alt="" class="float-left">
+                  <div class="block float-left">
+                    <p>Technology</p>
+                    <a href="#" class="card-link">Click!</a>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <img src="https://placeimg.com/40/40/arc" alt="" class="float-left">
+                  <div class="block float-left">
+                    <p>Architecure</p>
+                    <a href="#" class="card-link">Click!</a>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <img src="https://placeimg.com/40/40/people" alt="" class="float-left">
+                  <div class="block float-left">
+                    <p>People</p>
+                    <a href="#" class="card-link">Click!</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="card bs-margin-bottom">
+              <div class="card-block">
+                <h3 class="card-title">Buy with us!</h3>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item list-options">
+                  <button type="button" class="btn btn-secondary btn-options">Flights</button>
+                </li>
+                <li class="list-group-item list-options">
+                  <button type="button" class="btn btn-secondary btn-options">Cars</button>
+                </li>
+                <li class="list-group-item list-options">
+                  <button type="button" class="btn btn-secondary btn-options">Hotels</button>
+                </li>
+              </ul>
+              <div class="card-block">
+                <a href="" class="card-link">Flights + Hotels</a>
+                <a href="" class="card-link float-light">Cars + Hotels</a>
+              </div>
+            </div>
+
+            <div class="card bs-margin-bottom">
+              <h3 class="card-header">Are you searching some promotions?</h3>
+              <div class="card-block">
+                <p class="card-text">Let us show you some special prices for today</p>
+                <button class="btn btn-warning float-right btn-sm">Find promotions!</button>
+              </div>
+            </div>
+            <div class="card">
+              <h3 class="card-header">Searching for something in particular?</h3>
+              <div class="card-block">
+                <input type="text" class="form-control bs-margin-bottom" placeholder="Search...">
+                <button class="btn btn-warning float-right btn-sm">Search!</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card-group">
+              <div class="card margin-left bs-margin-bottom">
+                <img src="https://placeimg.com/250/350/arch" alt="" class="card-img-top">
+                <div class="card-footer">
+                  <p class="float-left text-muted">Enrich Your Knowledge</p>
+                  <buttom class="float-right btn btn-warning btn-sm">  GO!  </buttom>
+                </div>
+              </div>
+              <div class="card margin-left bs-margin-bottom">
+                <img src="https://placeimg.com/250/350/nature" alt="" class="card-img-top">
+                <div class="card-footer">
+                  <p class="float-left text-muted">Be One With Nature</p>
+                  <buttom class="float-right btn btn-warning btn-sm">  GO!  </buttom>
+                </div>
+              </div>
+              <div class="card margin-left bs-margin-bottom">
+                <img src="https://placeimg.com/250/350/people" alt="" class="card-img-top">
+                <div class="card-footer">
+                  <p class="float-left text-muted">Recommended Places</p>
+                  <buttom class="float-right btn btn-warning btn-sm">  GO!  </buttom>
+                </div>
+              </div>
+              <div class="card margin-left bs-margin-bottom">
+                <img src="https://placeimg.com/250/350/animals" alt="" class="card-img-top">
+                <div class="card-footer">
+                  <p class="float-left text-muted">Pet Friendly Places</p>
+                  <buttom class="float-right btn btn-warning btn-sm">  GO!  </buttom>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </header>
-      <main class="mdl-layout__content">
-        <div class="page-content">
-         <!-- Practice Content Goes Here -->
-        </div>
-      </main>
+      </section>
     </div>
+  </main>
+</div>
 
-  </body>
+</body>
 </html>
